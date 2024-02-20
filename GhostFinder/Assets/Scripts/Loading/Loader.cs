@@ -10,10 +10,10 @@ public static class Loader
     private class LoadingMonoBehaviour : MonoBehaviour { }
     public enum Scene
     {
+        Level0,
         Loading,
         MainMenu,
-        SampleScene,
-        Level0,
+        SampleScene,        
     }
 
     private static Action onLoaderCallback;
@@ -30,6 +30,16 @@ public static class Loader
 
         SceneManager.LoadScene(Scene.Loading.ToString());
     }
+    public static void Load(int sceneIndex)
+    {
+        onLoaderCallback = () =>
+        {
+            GameObject loadingGameObject = new GameObject("Loading Game Object");
+            loadingGameObject.AddComponent<LoadingMonoBehaviour>().StartCoroutine(LoadSceneAsync(sceneIndex));
+        };
+
+        SceneManager.LoadScene(Scene.Loading.ToString());
+    }
 
     private static IEnumerator LoadSceneAsync(Scene scene)
     {
@@ -39,6 +49,18 @@ public static class Loader
 
         while(!loadingAsyncOperation.isDone) 
         { 
+            yield return null;
+        }
+    }
+
+    private static IEnumerator LoadSceneAsync(int sceneIndex)
+    {
+        yield return null;
+
+        loadingAsyncOperation = SceneManager.LoadSceneAsync(sceneIndex);
+
+        while (!loadingAsyncOperation.isDone)
+        {
             yield return null;
         }
     }

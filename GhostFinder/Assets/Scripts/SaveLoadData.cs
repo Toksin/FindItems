@@ -5,26 +5,35 @@ using UnityEngine;
 
 public class SaveLoadData : MonoBehaviour
 {
+    [SerializeField] private MainMenuManager mainMenuManager;
+
     private void Awake()
     {
-        SaveSystem.Init();       
+        SaveSystem.Init();      
       
     }
 
-
-    void Update()
+    private void Start()
     {
-        if (Input.GetKeyDown(KeyCode.S))
+        if (mainMenuManager != null)
         {
-            Save();
-        }
-        if(Input.GetKeyDown(KeyCode.L))
-        {
-            Load();
-        }
+            mainMenuManager.NewGameCassetteActivate += MainMenuManager_NewGameCassetteActivate;
+            mainMenuManager.LoadCassetteActivate += MainMenuManager_LoadCassetteActivate;
+        }       
     }
 
-    private void Save()
+    private void MainMenuManager_LoadCassetteActivate(object sender, System.EventArgs e)
+    {        
+        StartCoroutine(LoadAfterDelay());
+    }
+
+    private void MainMenuManager_NewGameCassetteActivate(object sender, System.EventArgs e)
+    {
+        ResetGame();
+        StartCoroutine(LoadAfterDelay());
+    }
+     
+    private void ResetGame()
     {
         int levelID = 0;
 
@@ -35,17 +44,30 @@ public class SaveLoadData : MonoBehaviour
 
         string json = JsonUtility.ToJson(saveObject);
 
-        SaveSystem.Save(json);
-        Debug.Log("Saved!");
-    }
+        SaveSystem.Save(json);        
+    }  
 
+    private IEnumerator LoadAfterDelay()
+    {
+        yield return new WaitForSeconds(4f);
+        Load();
+    }
+    
     private void Load()
     {
         string saveString = SaveSystem.Load();
+        
         if(saveString != null)
         {
             SaveObject saveObject = JsonUtility.FromJson<SaveObject>(saveString);
-            // SetLevel(saveObject.LevelID);
+
+            int loadedLevelID = saveObject.LevelID;
+
+            Loader.Load(loadedLevelID);
+        }
+        else
+        {
+            Debug.Log("No saved data found.");
         }
     }
     
