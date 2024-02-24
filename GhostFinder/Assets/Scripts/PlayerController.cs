@@ -1,11 +1,13 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class PlayerController : MonoBehaviour
 {    
     [SerializeField] private Transform levelTransform;
-    [SerializeField] private GameInput gameInput;
+    [SerializeField] private GameInput gameInput;   
 
     private float rotationSpeed = 6f;
     private bool isRotating = false;

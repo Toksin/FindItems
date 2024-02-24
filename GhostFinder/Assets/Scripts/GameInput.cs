@@ -6,6 +6,8 @@ using UnityEngine.InputSystem;
 
 public class GameInput : MonoBehaviour
 {
+    public static GameInput Instance { get; private set; }
+
     public event EventHandler<OnEnvironmentMovedEventArgs> OnEnvironmentMoved;
 
     private PlayerInputActions playerinputActions;
@@ -17,6 +19,7 @@ public class GameInput : MonoBehaviour
     }
     private void Awake()
     {
+        Instance = this;
         playerinputActions = new PlayerInputActions();
         playerinputActions.Player2D.Enable();
 
