@@ -6,13 +6,14 @@ public class CursorManager : MonoBehaviour
 {
     [SerializeField] private Texture2D cursorTexture;
    
-    public enum CursorType
-    {
-        DefaultCursor,
-        ZoomCursor
-    }
     void Start()
     {
-       Cursor.SetCursor(cursorTexture, new Vector2(10, 10), CursorMode.Auto);
+        ChangeCursor(cursorTexture);
     }   
+
+    private void ChangeCursor(Texture2D cursor)
+    {
+        Vector2 hotspot = new Vector2(cursor.width / 2, cursor.height / 2);
+        Cursor.SetCursor(cursor, hotspot, CursorMode.Auto);
+    }
 }

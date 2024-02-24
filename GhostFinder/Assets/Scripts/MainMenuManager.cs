@@ -1,22 +1,35 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class MainMenuManager : MonoBehaviour
 {
+    private const string OPTION_BOOL_PARAMETR = "Deactivate";
+    public static MainMenuManager Instance;
+
+    private void Awake()
+    {
+        Instance = this; 
+    }
+
     public event EventHandler NewGameCassetteActivate;
     public event EventHandler LoadCassetteActivate;
     public event EventHandler OptionCassetteActivate;
+    public event EventHandler SoundActivate;
+    public event EventHandler SoundInsertCassette;
 
-    [SerializeField] private Animator NewGameCassetteAnimator;
-    [SerializeField] private Animator OptionCassetteAnimator;
-    [SerializeField] private Animator LoadingCassetteAnimator;
+    [SerializeField] private Animator newGameCassetteAnimator;
+    [SerializeField] private Animator optionCassetteAnimator;
+    [SerializeField] private Animator loadingCassetteAnimator;
 
-    [SerializeField] private Outline NewGameCassetteOutlineScript;
-    [SerializeField] private Outline OptionCassetteOutlineScript;   
-    [SerializeField] private Outline LoadingCassetteOutlineScript;
-    [SerializeField] private Outline DoorOutlineScript;
+    [SerializeField] private Outline newGameCassetteOutlineScript;
+    [SerializeField] private Outline optionCassetteOutlineScript;   
+    [SerializeField] private Outline loadingCassetteOutlineScript;
+    [SerializeField] private Outline doorOutlineScript;
+
+    private bool isSoundActivate = false;
 
     private void Update()
     {
@@ -30,63 +43,81 @@ public class MainMenuManager : MonoBehaviour
                 if (hit.collider.CompareTag("NewGame"))
                 {
                     NewGameCassetteActivate?.Invoke(this, EventArgs.Empty);
-                    NewGameCassetteAnimator.SetTrigger("ActivateCassette");
-                    
+                    newGameCassetteAnimator.SetTrigger("ActivateCassette");
+                    SoundInsertCassette?.Invoke(this, EventArgs.Empty);
                 }
                 else if (hit.collider.CompareTag("Option"))
-                {
+                {                   
+                    optionCassetteAnimator.SetBool(OPTION_BOOL_PARAMETR, false);
                     OptionCassetteActivate?.Invoke(this, EventArgs.Empty);
-                    OptionCassetteAnimator.SetTrigger("ActivateCassette");
-                    OptionCassetteOutlineScript.enabled = true;
+                    optionCassetteAnimator.SetTrigger("ActivateCassette");
+                    optionCassetteOutlineScript.enabled = true;
+                    SoundInsertCassette?.Invoke(this, EventArgs.Empty);
                 }
                 else if (hit.collider.CompareTag("Loading"))
-                {
+                {                  
                     LoadCassetteActivate?.Invoke(this, EventArgs.Empty);
-                    LoadingCassetteAnimator.SetTrigger("ActivateCassette");
-                    LoadingCassetteOutlineScript.enabled = true;
+                    loadingCassetteAnimator.SetTrigger("ActivateCassette");
+                    loadingCassetteOutlineScript.enabled = true;
+                    SoundInsertCassette?.Invoke(this, EventArgs.Empty);
                 }
                 else if (hit.collider.CompareTag("Door"))
-                {                   
-                    DoorOutlineScript.enabled = true;
+                {                    
+                    doorOutlineScript.enabled = true;
                 }
             }         
           
-        }
+        }     
 
         if(Physics.Raycast(ray, out hit))
         {
-            if (hit.collider.CompareTag("NewGame"))
+            if ((hit.collider.CompareTag("NewGame") || hit.collider.CompareTag("Option") || hit.collider.CompareTag("Loading") || hit.collider.CompareTag("Door")) && !isSoundActivate)
             {
-                NewGameCassetteOutlineScript.enabled = true;
+                SoundActivate?.Invoke(this, EventArgs.Empty);
+                isSoundActivate = true;
+            }         
+
+            if (hit.collider.CompareTag("NewGame"))
+            {              
+                newGameCassetteOutlineScript.enabled = true;            
             }
-            else { NewGameCassetteOutlineScript.enabled = false; }
+            else 
+            { 
+                newGameCassetteOutlineScript.enabled = false;               
+            }
             
             if (hit.collider.CompareTag("Option")) 
-            { 
-                OptionCassetteOutlineScript.enabled = true; 
+            {               
+                optionCassetteOutlineScript.enabled = true;               
             }
-            else { OptionCassetteOutlineScript.enabled = false; }
+            else { optionCassetteOutlineScript.enabled = false; }
             
             if (hit.collider.CompareTag("Loading"))
-            {              
-                LoadingCassetteOutlineScript.enabled = true;
+            {               
+                loadingCassetteOutlineScript.enabled = true;             
             }
-            else { LoadingCassetteOutlineScript.enabled = false; }
+            else 
+            { 
+                loadingCassetteOutlineScript.enabled = false;               
+            }
             
             if (hit.collider.CompareTag("Door"))
-            {
-                DoorOutlineScript.enabled = true;
+            {               
+                doorOutlineScript.enabled = true;               
             }
-            else { DoorOutlineScript.enabled = false; }
+            else { doorOutlineScript.enabled = false; }
         }
         else
         {
-            NewGameCassetteOutlineScript.enabled = false;
-            OptionCassetteOutlineScript.enabled = false;
-            LoadingCassetteOutlineScript.enabled = false;
-            DoorOutlineScript.enabled = false;
+            isSoundActivate = false;
+            newGameCassetteOutlineScript.enabled = false;
+            optionCassetteOutlineScript.enabled = false;
+            loadingCassetteOutlineScript.enabled = false;
+            doorOutlineScript.enabled = false;            
         }
        
 
     }
+
+   
 }
