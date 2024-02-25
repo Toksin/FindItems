@@ -4,8 +4,11 @@ using System.IO;
 using UnityEngine;
 
 public class SaveLoadData : MonoBehaviour
-{
+{    
     [SerializeField] private MainMenuManager mainMenuManager;
+    [SerializeField] private WinScreenUI winScreenUI;
+
+    private int levelID = 0;
 
     private void Awake()
     {
@@ -19,7 +22,18 @@ public class SaveLoadData : MonoBehaviour
         {
             mainMenuManager.NewGameCassetteActivate += MainMenuManager_NewGameCassetteActivate;
             mainMenuManager.LoadCassetteActivate += MainMenuManager_LoadCassetteActivate;
-        }       
+        }
+
+        if (winScreenUI != null)
+        {
+            winScreenUI.OnNextLLevelButtonClicked += WinScreenUI_OnNextLLevelButtonClicked;
+        }      
+    }  
+
+    private void WinScreenUI_OnNextLLevelButtonClicked(object sender, System.EventArgs e)
+    {
+        NextLevel();
+        StartCoroutine(LoadAfterDelay());
     }
 
     private void MainMenuManager_LoadCassetteActivate(object sender, System.EventArgs e)
@@ -35,7 +49,7 @@ public class SaveLoadData : MonoBehaviour
      
     private void ResetGame()
     {
-        int levelID = 0;
+         levelID = 0;
 
         SaveObject saveObject = new SaveObject
         {
@@ -45,11 +59,25 @@ public class SaveLoadData : MonoBehaviour
         string json = JsonUtility.ToJson(saveObject);
 
         SaveSystem.Save(json);        
-    }  
+    }
+
+    private void NextLevel()
+    {
+        levelID++;
+
+        SaveObject saveObject = new SaveObject
+        {
+            LevelID = levelID,
+        };
+
+        string json = JsonUtility.ToJson(saveObject);
+
+        SaveSystem.Save(json);
+    }
 
     private IEnumerator LoadAfterDelay()
     {
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(1f);
         Load();
     }
     

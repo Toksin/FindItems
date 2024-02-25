@@ -9,17 +9,17 @@ public class ChangeSize : MonoBehaviour
     [SerializeField] private float zoomOutSpeed = 2f; // Скорость для ZoomOut
     private RectTransform rectTransform; // Use RectTransform for size changes
     private Vector3 originalSize; // Store the original size
-    private bool isZoom = false;
+    private bool isZoom = true;
 
-    private Vector3 bigSize = new Vector3 (0, 0, 0);
-
+    private void Awake()
+    {
+        cameraSystem.ZoomIn += CameraSystem_ZoomIn;
+        cameraSystem.ZoomOut += CameraSystem_ZoomOut;
+    }
     void Start()
     {
         rectTransform = GetComponent<RectTransform>(); // Use RectTransform for size changes
-        originalSize = rectTransform.localScale; // Store the original size
-
-        cameraSystem.ZoomIn += CameraSystem_ZoomIn;
-        cameraSystem.ZoomOut += CameraSystem_ZoomOut;
+        originalSize = rectTransform.localScale; // Store the original size       
     }
 
     private void CameraSystem_ZoomOut(object sender, System.EventArgs e)
@@ -27,8 +27,7 @@ public class ChangeSize : MonoBehaviour
         if (!isZoom)
         {
             isZoom = true;
-            StartCoroutine(ChangeSizeCoroutine(new Vector3(151.46f, 172.2247f, 279.735f), zoomOutSpeed));
-            Debug.Log("ZoomOut");
+            StartCoroutine(ChangeSizeCoroutine(new Vector3(151.46f, 172.2247f, 279.735f), zoomOutSpeed));           
         }
     }
 
@@ -37,8 +36,7 @@ public class ChangeSize : MonoBehaviour
         if (isZoom)
         {
             isZoom = false;
-            StartCoroutine(ChangeSizeCoroutine(new Vector3(6.2f, 7.05f, 11.45092f), zoomInSpeed));
-            Debug.Log("ZoomIn");
+            StartCoroutine(ChangeSizeCoroutine(new Vector3(6.2f, 7.05f, 11.45092f), zoomInSpeed));           
         }
     }
 

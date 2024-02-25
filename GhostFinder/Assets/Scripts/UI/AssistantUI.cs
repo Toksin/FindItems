@@ -29,12 +29,13 @@ public class AssistantUI : MonoBehaviour
             else
             {
                 string[] messageArray = new string[]
-                {
-                "Привет, як тобі вже пояснили це секретне завдання,",
+                {                
+                "Привіт, як тобі вже пояснили це секретне завдання",
                 "З нашої лабораторії втікли аномалії",
                 "Їх потрібно вислідіти та ліквідувати",
-                "Ось тобі лінза №545 з її допомогою ти зможеш знаходити аномалії",
-                "Побачимось на місці подій"
+                "Тримай збільшувальне скло, з його допомогою ти зможеш знаходити аномалії",
+                "Бери його та приходь на першу локацію",
+                "..."
                 };
 
                 if (currentMessageIndex < messageArray.Length)
@@ -58,5 +59,10 @@ public class AssistantUI : MonoBehaviour
     private void StopTalkingSound()
     {
         talkingAudioSourse.Stop();
+    }
+
+    public int GetCurrentMessageIndex()
+    {
+        return currentMessageIndex;
     }
 }

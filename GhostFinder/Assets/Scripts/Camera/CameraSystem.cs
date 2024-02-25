@@ -16,20 +16,23 @@ public class CameraSystem : MonoBehaviour
     [SerializeField] private CinemachineVirtualCamera defaultCinemachineVirtualCamera;
     private void Update()
     {
-        if (Mouse.current.rightButton.wasPressedThisFrame)
+        if (!Lvl0StartManager.Instance.IsCutsceneActive())
         {
-            zoomIn = !zoomIn;
+            if (Mouse.current.rightButton.wasPressedThisFrame)
+            {
+                zoomIn = !zoomIn;
 
-            if (zoomIn)
-            {
-                defaultCinemachineVirtualCamera.Priority = 1;
-                ZoomIn?.Invoke(this, EventArgs.Empty);
+                if (zoomIn)
+                {
+                    defaultCinemachineVirtualCamera.Priority = 1;
+                    ZoomIn?.Invoke(this, EventArgs.Empty);
+                }
+                else
+                {
+                    defaultCinemachineVirtualCamera.Priority = 10;
+                    ZoomOut?.Invoke(this, EventArgs.Empty);
+                }
             }
-            else
-            {
-                defaultCinemachineVirtualCamera.Priority = 10;
-                ZoomOut?.Invoke(this, EventArgs.Empty);
-            }
-        }
+        }       
     }
 }
