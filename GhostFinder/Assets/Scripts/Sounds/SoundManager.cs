@@ -18,10 +18,20 @@ public class SoundManager : MonoBehaviour
     private void Start()
     {      
         GameInput.Instance.OnEnvironmentMoved += GameInput_OnEnvironmentMoved;         
-        ClickOnTargetSystem.Instance.OnClick += ClickOnTarget_OnClick;       
-        MainMenuManager.Instance.SoundActivate += MainMenuManager_CassetteAndDoorSoundActivate;
-        MainMenuManager.Instance.SoundInsertCassette += mainMenuManager_SoundInsertCassette;
-        OptionsUI.Instance.BackButtonClicked += BackButtonClicked_BackButtonClicked;        
+        ClickOnTargetSystem.Instance.OnClick += ClickOnTarget_OnClick;
+
+        MainMenuManager mainMenuManager = MainMenuManager.Instance;
+        if (mainMenuManager != null)
+        {
+            mainMenuManager.SoundActivate += MainMenuManager_CassetteAndDoorSoundActivate;
+            mainMenuManager.SoundInsertCassette += mainMenuManager_SoundInsertCassette;
+        }
+
+        OptionsUI optionsUI = OptionsUI.Instance;
+        if (optionsUI != null)
+        {
+            optionsUI.BackButtonClicked += BackButtonClicked_BackButtonClicked;
+        }
     }
 
 
@@ -48,7 +58,10 @@ public class SoundManager : MonoBehaviour
 
     private void GameInput_OnEnvironmentMoved(object sender, GameInput.OnEnvironmentMovedEventArgs e)
     {
-        PlaySound(audioClipsRefsSO.rotateWorld, Camera.main.transform.position); 
+        if (!Lvl0StartManager.Instance.IsCutsceneActive())
+        {
+            PlaySound(audioClipsRefsSO.rotateWorld, Camera.main.transform.position);
+        }
     }
 
     private void PlaySound(AudioClip audioClip, Vector3 position, float volumeMultiplier = 1f)

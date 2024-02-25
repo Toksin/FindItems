@@ -18,16 +18,19 @@ public class PlayerController : MonoBehaviour
     }
 
     private void GameInput_OnEnvironmentMoved(object sender, GameInput.OnEnvironmentMovedEventArgs e)
-    {       
-        if(!isRotating && e.movementVector.x > 0) 
+    {
+        if (Lvl0StartManager.Instance.IsCutsceneActive() == false)
         {
-            StartCoroutine(RotateLevel(Vector3.up, 90f, 1f / rotationSpeed));
-        }
-        else if(!isRotating && e.movementVector.x < 0)
-        {
-            StartCoroutine(RotateLevel(Vector3.up, -90f, 1f / rotationSpeed));
-        }
-        
+            if (!isRotating && e.movementVector.x > 0)
+            {
+                StartCoroutine(RotateLevel(Vector3.up, 90f, 1f / rotationSpeed));
+            }
+            else if (!isRotating && e.movementVector.x < 0)
+            {
+                StartCoroutine(RotateLevel(Vector3.up, -90f, 1f / rotationSpeed));
+            }
+        }      
+   
     }
 
     private IEnumerator RotateLevel(Vector3 axis, float angle, float duration)

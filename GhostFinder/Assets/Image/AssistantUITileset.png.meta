@@ -1,0 +1,1636 @@
+fileFormatVersion: 2
+guid: 267cc04623163e54593c9471ee72fbeb
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1000
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AssistantUITileset_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 230
+        width: 58
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4ad74086b7a45649929aeb52ac773ac
+      internalID: -431130784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_1
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 203
+        width: 30
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c54d3125013e2c54ba49bafa90bc9c14
+      internalID: 735521650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_2
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 239
+        width: 22
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d33f51aa503ac41a92c921bf0fe483
+      internalID: 566201528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_3
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 212
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a0d82536b3f8f41911fbc473729745
+      internalID: -797568068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_4
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 243
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1746ec0e4e00a1b48b75e0472e6121ad
+      internalID: -421943173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_5
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 230
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80777e7d29c5fbc42a623b1fcd0db5d3
+      internalID: -1413927924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_6
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 230
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c431d1b6a7b9517479316976fdb3a05a
+      internalID: -1065603334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_7
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 231
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9be4b6c0849f99408bce807100d2f56
+      internalID: -1542583286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_8
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 230
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 791943efea3ba154ea873873bdcb9fd2
+      internalID: -2099836808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_9
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 230
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01a47080e8a51f9479d2d413dbb8e997
+      internalID: -797113824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_10
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 230
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f53a2914e66c70468e35f080b803073
+      internalID: 2049885979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_11
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 230
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f1343325a09af242a6b12d545466096
+      internalID: -182786170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_12
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 234
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e4a64afd2860ae4185a52bffead9c4d
+      internalID: -889735658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_13
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 205
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 741e9928b14e5824b9d42cb299444e10
+      internalID: -623570234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_14
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 225
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b10874b3e87a1a742bcf76aae23ce96d
+      internalID: 1721796813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_15
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 204
+        width: 58
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f5179fd3a7845b4db43e12709945a45
+      internalID: -713860022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_16
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 205
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e59a21a35af21254bb38acd2f4826899
+      internalID: 1681206851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_17
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 205
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ac5afc2e855d4343b2d1eb85272c04a
+      internalID: -2131543947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_18
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 205
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76509f038d8639f438624f9242f46291
+      internalID: -1787703792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_19
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 205
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2e2bc0a5b05b9341ab05fc1e487832d
+      internalID: -1944888377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_20
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 205
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f1241ee68e9fd14591d9c6421d57a72
+      internalID: 200343985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_21
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 205
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79ae48564d086a043a00ec9075a50500
+      internalID: -228939833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_22
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 205
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b9ce69b568a60f45afb0eaba7073275
+      internalID: -1672570663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_23
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 176
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18ee8cf17fe2e964ca625013d2356d4a
+      internalID: 1835953323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_24
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 175
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccbc0f618dee3dd45bfd4f3d8b86898f
+      internalID: -589307083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_25
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 176
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 573a1f36886ca984eb4253c2dc47cfa7
+      internalID: 73135250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_26
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 181
+        width: 53
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f0a114ed0cf65e4a9062faef50d3d19
+      internalID: -374021962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_27
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 176
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 929c96307d2624e4fa5720ddb326667e
+      internalID: 1963973322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_28
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 180
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea3be16015619244fa5a34c7e1ea4724
+      internalID: -1461301638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_29
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 180
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc1ffe8c5015c9045b5cafe3b2e50827
+      internalID: -427349986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_30
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 180
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e0ea83255c15d843bc9372cc78189dd
+      internalID: 933363987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_31
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 181
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45c42c8746055dd47a241a35fbe862c7
+      internalID: 1563190628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_32
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 181
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea5b2c859a80f954b941b5b930f03604
+      internalID: 1931325515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_33
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 181
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7918670f4ef937b47aa139a48f0c23e6
+      internalID: -745130580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_34
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 159
+        width: 52
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dacba729a3c4f4f418940556336a2ab0
+      internalID: 1804228845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_35
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 162
+        width: 39
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaf27b9aa703d2549a57ebd82dcdf016
+      internalID: 1546293059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_36
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 162
+        width: 38
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f39a4e8034e774e90973d5b8c95a1d
+      internalID: -1478691879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_37
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 156
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea9efcee6e2cf2468fd2c4de7183b89
+      internalID: 1670570104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_38
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 158
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd14b9676470eff46a0cff041c384770
+      internalID: 143443590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_39
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 156
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab9ac7fdfb16ce34596ff683d79809c1
+      internalID: -1666268623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_40
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 156
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c739d9df8f0026e4387ce55bc36f7f8a
+      internalID: -975137337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_41
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 156
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56d0905fe4426ca42a7eea035bb25d3c
+      internalID: 1794470456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_42
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 156
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0588b4195d514c649b53abd49889f217
+      internalID: 1192160593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_43
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 152
+        width: 52
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6d66ed40bffa5241b0c04106fdd0dcf
+      internalID: -1500823374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_44
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 124
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d354b393c7bede4a8f8015a45db1f6f
+      internalID: 865184834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_45
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 117
+        width: 93
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe0f363f8f4bc114b85758a8537e2a55
+      internalID: -1936274255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_46
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 132
+        width: 27
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b834a5cda5613c42a46a4f09deb6f46
+      internalID: 813296050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_47
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 57
+        width: 174
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e60e4c093f570546bb6845a8ffc1941
+      internalID: -44243839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_48
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08eab5f6753d07f468293b46874ab236
+      internalID: -1771475471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_49
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4f2912d089b298409e89e5a562c78a4
+      internalID: -629016793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_50
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 114
+        width: 25
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7b3160ca675ca24283389982664cf61
+      internalID: 1958851024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_51
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 78
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35fb334062719cb48a858722c9d113cc
+      internalID: 56110317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_52
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 78
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96e8c3590c4928944a6635c5a306ac41
+      internalID: -1603714037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_53
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 92
+        width: 106
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5632915b8bf9a5443bfd628768f606cc
+      internalID: 641437816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_54
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 85
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14cf7b238b7db2d48a517fe3bae01b18
+      internalID: -1266581714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_55
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 89
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94a0180eea6b8e44991a913f184d048b
+      internalID: -1256482929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_56
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 80
+        width: 106
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fbfd8c5e0e365849b4af437aab4a19f
+      internalID: -1894097057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_57
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 53
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b961d4ac41047384e9df320f4f78be1d
+      internalID: -1595807511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_58
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 53
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d717b5138b0a984991de8965ff10046
+      internalID: -2129379480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_59
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 57
+        width: 106
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6481bdbe8d9d9cf47bdba844a9bcb453
+      internalID: -1987724337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_60
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 57
+        width: 80
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30b70c309c525b34fb2f51fde4d62b5c
+      internalID: 478579931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_61
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 39
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17b723c2c0f35c8439c958f6ed3c97c0
+      internalID: 1415138632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_62
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 39
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ef31ab54181bcf44ad7ef20754e0805
+      internalID: 1552268358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_63
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 39
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dcbcca1ea475c3409848730b097198a
+      internalID: 582555743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_64
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 20
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5560779faa1ed4a4aac1f85128fa44f8
+      internalID: -1495005933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_65
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 13
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f606141d3519644d8f3464340e379f9
+      internalID: 1806011431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_66
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 12
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f9fea3dae91c84db1f0b8c152c54c7
+      internalID: -2066258533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AssistantUITileset_67
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 12
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffaee7856cffe4f408506fad4c3559f9
+      internalID: -811338439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 45fd1aeb4f99f414b94bc047e14a363d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      AssistantUITileset_0: -431130784
+      AssistantUITileset_1: 735521650
+      AssistantUITileset_10: 2049885979
+      AssistantUITileset_11: -182786170
+      AssistantUITileset_12: -889735658
+      AssistantUITileset_13: -623570234
+      AssistantUITileset_14: 1721796813
+      AssistantUITileset_15: -713860022
+      AssistantUITileset_16: 1681206851
+      AssistantUITileset_17: -2131543947
+      AssistantUITileset_18: -1787703792
+      AssistantUITileset_19: -1944888377
+      AssistantUITileset_2: 566201528
+      AssistantUITileset_20: 200343985
+      AssistantUITileset_21: -228939833
+      AssistantUITileset_22: -1672570663
+      AssistantUITileset_23: 1835953323
+      AssistantUITileset_24: -589307083
+      AssistantUITileset_25: 73135250
+      AssistantUITileset_26: -374021962
+      AssistantUITileset_27: 1963973322
+      AssistantUITileset_28: -1461301638
+      AssistantUITileset_29: -427349986
+      AssistantUITileset_3: -797568068
+      AssistantUITileset_30: 933363987
+      AssistantUITileset_31: 1563190628
+      AssistantUITileset_32: 1931325515
+      AssistantUITileset_33: -745130580
+      AssistantUITileset_34: 1804228845
+      AssistantUITileset_35: 1546293059
+      AssistantUITileset_36: -1478691879
+      AssistantUITileset_37: 1670570104
+      AssistantUITileset_38: 143443590
+      AssistantUITileset_39: -1666268623
+      AssistantUITileset_4: -421943173
+      AssistantUITileset_40: -975137337
+      AssistantUITileset_41: 1794470456
+      AssistantUITileset_42: 1192160593
+      AssistantUITileset_43: -1500823374
+      AssistantUITileset_44: 865184834
+      AssistantUITileset_45: -1936274255
+      AssistantUITileset_46: 813296050
+      AssistantUITileset_47: -44243839
+      AssistantUITileset_48: -1771475471
+      AssistantUITileset_49: -629016793
+      AssistantUITileset_5: -1413927924
+      AssistantUITileset_50: 1958851024
+      AssistantUITileset_51: 56110317
+      AssistantUITileset_52: -1603714037
+      AssistantUITileset_53: 641437816
+      AssistantUITileset_54: -1266581714
+      AssistantUITileset_55: -1256482929
+      AssistantUITileset_56: -1894097057
+      AssistantUITileset_57: -1595807511
+      AssistantUITileset_58: -2129379480
+      AssistantUITileset_59: -1987724337
+      AssistantUITileset_6: -1065603334
+      AssistantUITileset_60: 478579931
+      AssistantUITileset_61: 1415138632
+      AssistantUITileset_62: 1552268358
+      AssistantUITileset_63: 582555743
+      AssistantUITileset_64: -1495005933
+      AssistantUITileset_65: 1806011431
+      AssistantUITileset_66: -2066258533
+      AssistantUITileset_67: -811338439
+      AssistantUITileset_7: -1542583286
+      AssistantUITileset_8: -2099836808
+      AssistantUITileset_9: -797113824
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

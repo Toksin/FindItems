@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu()]
 public class AudioClipsRefsSO : ScriptableObject
 {
-    public AudioClip[] rotateWorld;
+    public AudioClip rotateWorld;
     public AudioClip win;
     public AudioClip button—lick;
     public AudioClip tapeCassetteInsert;

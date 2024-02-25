@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ae9267fedb4afa4690c19d0e7a8d96b, type: 3}
   m_Name: AudioClipsRefsSO
   m_EditorClassIdentifier: 
-  rotateWorld: []
+  rotateWorld: {fileID: 8300000, guid: 85d169eb01e72f14b9ac7c256ebe3bea, type: 3}
   win: {fileID: 8300000, guid: b2ec119c7e6c3244399accfe9a3313df, type: 3}
   "button\u0421lick": {fileID: 8300000, guid: 8ab8fe502aae8014dace0f0c1306bc61, type: 3}
   tapeCassetteInsert: {fileID: 8300000, guid: 9b38c3609f688e040a57c6fb06ba794f, type: 3}
