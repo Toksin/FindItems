@@ -7,15 +7,14 @@ using UnityEngine.EventSystems;
 public class ClickOnTargetSystem : MonoBehaviour
 {
     public static ClickOnTargetSystem Instance { get; private set; }
-
-    [SerializeField] private Camera camera;
+    [SerializeField] private Camera camera;    
     public event EventHandler OnClick;
 
     private const string TARGET_TAG = "Target";
 
     private void Awake()
     {
-        Instance = this;
+        Instance = this;       
     }
     private void Update()
     {
@@ -27,8 +26,7 @@ public class ClickOnTargetSystem : MonoBehaviour
             {
                 if(hitInfo.collider.tag == TARGET_TAG)
                 {
-                    OnClick?.Invoke(this, EventArgs.Empty);
-                    Debug.Log("Yes");
+                    OnClick?.Invoke(this, EventArgs.Empty);                    
                 }
             }
         }

@@ -1569,7 +1569,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 280423545}
-  - {fileID: 1913985129}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &623613080
@@ -1906,6 +1905,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainMenuManager: {fileID: 917618440}
+  winScreenUI: {fileID: 0}
 --- !u!114 &917618442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3898,15 +3898,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1913985126}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: -1.150989}
+  m_LocalPosition: {x: 0, y: 0, z: -5.81}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 623613079}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -9.32433, y: -1.7887025}
+  m_AnchoredPosition: {x: -10.95, y: 1.04}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2014398682
@@ -4546,6 +4546,7 @@ SceneRoots:
   - {fileID: 32095663}
   - {fileID: 2082426753}
   - {fileID: 623613079}
+  - {fileID: 1913985129}
   - {fileID: 917618439}
   - {fileID: 1036288641}
   - {fileID: 1500961785}
