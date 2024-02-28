@@ -98,7 +98,24 @@ public class SaveLoadData : MonoBehaviour
             Debug.Log("No saved data found.");
         }
     }
-    
+    public int GetCurrentLevelID()
+    {
+        string saveString = SaveSystem.Load();
+
+        if (saveString != null)
+        {
+            SaveObject saveObject = JsonUtility.FromJson<SaveObject>(saveString);
+
+            int loadedLevelID = saveObject.LevelID;
+
+           return loadedLevelID;
+        }
+        else
+        {
+           return 0;
+        }
+    }
+
 
     private class SaveObject
     {

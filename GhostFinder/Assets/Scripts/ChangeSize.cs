@@ -5,21 +5,29 @@ using UnityEngine;
 public class ChangeSize : MonoBehaviour
 {
     [SerializeField] private CameraSystem cameraSystem;
-    [SerializeField] private float zoomInSpeed = 1f; // Скорость для ZoomIn
-    [SerializeField] private float zoomOutSpeed = 2f; // Скорость для ZoomOut
-    private RectTransform rectTransform; // Use RectTransform for size changes
-    private Vector3 originalSize; // Store the original size
+    [SerializeField] private float zoomInSpeed = 1f; 
+    [SerializeField] private float zoomOutSpeed = 2f; 
+    [SerializeField] private ClickOnTargetSystem clickOnTargetSystem; 
+    private RectTransform rectTransform; 
+    private Vector3 originalSize; 
     private bool isZoom = true;
 
     private void Awake()
     {
         cameraSystem.ZoomIn += CameraSystem_ZoomIn;
         cameraSystem.ZoomOut += CameraSystem_ZoomOut;
+        clickOnTargetSystem.OnClick += ClickOnTargetSystem_OnClick;
     }
+
+    private void ClickOnTargetSystem_OnClick(object sender, System.EventArgs e)
+    {       
+      // StartCoroutine(ChangeSizeCoroutine(new Vector3(151.46f, 172.2247f, 279.735f), zoomOutSpeed));        
+    }
+
     void Start()
     {
-        rectTransform = GetComponent<RectTransform>(); // Use RectTransform for size changes
-        originalSize = rectTransform.localScale; // Store the original size       
+        rectTransform = GetComponent<RectTransform>(); 
+        originalSize = rectTransform.localScale;    
     }
 
     private void CameraSystem_ZoomOut(object sender, System.EventArgs e)
@@ -55,4 +63,6 @@ public class ChangeSize : MonoBehaviour
 
         rectTransform.localScale = targetSize;
     }
+
+  
 }

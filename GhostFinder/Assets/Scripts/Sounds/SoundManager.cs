@@ -58,7 +58,7 @@ public class SoundManager : MonoBehaviour
 
     private void GameInput_OnEnvironmentMoved(object sender, GameInput.OnEnvironmentMovedEventArgs e)
     {
-        if (!Lvl0StartManager.Instance.IsCutsceneActive())
+        if (!CutSceneActiveController.Instance.IsCutsceneActive())
         {
             PlaySound(audioClipsRefsSO.rotateWorld, Camera.main.transform.position);
         }

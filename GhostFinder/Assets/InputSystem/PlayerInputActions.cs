@@ -136,6 +136,15 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Menu"",
+                    ""type"": ""Button"",
+                    ""id"": ""a1ccbefb-6fbd-4018-8f58-64249bf42582"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -193,6 +202,28 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""action"": ""MouseInput"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9c621d76-db9a-457c-b0b5-908f0a8090fd"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Menu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f09e5f33-197e-4098-8b23-d2ed879083cb"",
+                    ""path"": ""<Keyboard>/f1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Menu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -207,6 +238,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         m_Player2D = asset.FindActionMap("Player2D", throwIfNotFound: true);
         m_Player2D_MoveEnvironment = m_Player2D.FindAction("MoveEnvironment", throwIfNotFound: true);
         m_Player2D_MouseInput = m_Player2D.FindAction("MouseInput", throwIfNotFound: true);
+        m_Player2D_Menu = m_Player2D.FindAction("Menu", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -324,12 +356,14 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     private List<IPlayer2DActions> m_Player2DActionsCallbackInterfaces = new List<IPlayer2DActions>();
     private readonly InputAction m_Player2D_MoveEnvironment;
     private readonly InputAction m_Player2D_MouseInput;
+    private readonly InputAction m_Player2D_Menu;
     public struct Player2DActions
     {
         private @PlayerInputActions m_Wrapper;
         public Player2DActions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
         public InputAction @MoveEnvironment => m_Wrapper.m_Player2D_MoveEnvironment;
         public InputAction @MouseInput => m_Wrapper.m_Player2D_MouseInput;
+        public InputAction @Menu => m_Wrapper.m_Player2D_Menu;
         public InputActionMap Get() { return m_Wrapper.m_Player2D; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -345,6 +379,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @MouseInput.started += instance.OnMouseInput;
             @MouseInput.performed += instance.OnMouseInput;
             @MouseInput.canceled += instance.OnMouseInput;
+            @Menu.started += instance.OnMenu;
+            @Menu.performed += instance.OnMenu;
+            @Menu.canceled += instance.OnMenu;
         }
 
         private void UnregisterCallbacks(IPlayer2DActions instance)
@@ -355,6 +392,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @MouseInput.started -= instance.OnMouseInput;
             @MouseInput.performed -= instance.OnMouseInput;
             @MouseInput.canceled -= instance.OnMouseInput;
+            @Menu.started -= instance.OnMenu;
+            @Menu.performed -= instance.OnMenu;
+            @Menu.canceled -= instance.OnMenu;
         }
 
         public void RemoveCallbacks(IPlayer2DActions instance)
@@ -381,5 +421,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     {
         void OnMoveEnvironment(InputAction.CallbackContext context);
         void OnMouseInput(InputAction.CallbackContext context);
+        void OnMenu(InputAction.CallbackContext context);
     }
 }
