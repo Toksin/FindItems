@@ -8,7 +8,7 @@ public class SaveLoadData : MonoBehaviour
     [SerializeField] private MainMenuManager mainMenuManager;
     [SerializeField] private WinScreenUI winScreenUI;
 
-    private int levelID = 0;
+    private static int levelID;
 
     private void Awake()
     {
@@ -31,7 +31,7 @@ public class SaveLoadData : MonoBehaviour
     }  
 
     private void WinScreenUI_OnNextLLevelButtonClicked(object sender, System.EventArgs e)
-    {
+    {       
         NextLevel();
         StartCoroutine(LoadAfterDelay());
     }
@@ -63,7 +63,7 @@ public class SaveLoadData : MonoBehaviour
 
     private void NextLevel()
     {
-        levelID++;
+        levelID++;       
 
         SaveObject saveObject = new SaveObject
         {
@@ -89,8 +89,7 @@ public class SaveLoadData : MonoBehaviour
         {
             SaveObject saveObject = JsonUtility.FromJson<SaveObject>(saveString);
 
-            int loadedLevelID = saveObject.LevelID;
-
+            int loadedLevelID = saveObject.LevelID;           
             Loader.Load(loadedLevelID);
         }
         else
