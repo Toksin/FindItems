@@ -1,9 +1,6 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using static TextWriter;
-using static UnityEditor.ShaderGraph.Internal.KeywordDependentCollection;
 using System;
 
 public class TextWriter : MonoBehaviour

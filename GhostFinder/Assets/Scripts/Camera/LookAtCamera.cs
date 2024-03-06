@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class LookAtCamera : MonoBehaviour
@@ -24,8 +22,7 @@ public class LookAtCamera : MonoBehaviour
                 Vector3 dirFromCamera = transform.position - Camera.main.transform.position;
                 transform.LookAt(transform.position + dirFromCamera);
                 break;
-        }
-            
+        }           
         
     }
 }

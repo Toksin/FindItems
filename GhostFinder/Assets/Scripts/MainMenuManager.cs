@@ -18,7 +18,7 @@ public class MainMenuManager : MonoBehaviour
     public event EventHandler LoadCassetteActivate;
     public event EventHandler OptionCassetteActivate;
     public event EventHandler SoundActivate;
-    public event EventHandler SoundInsertCassette;
+    public event EventHandler SoundInsertCassette;   
 
     [SerializeField] private Animator newGameCassetteAnimator;
     [SerializeField] private Animator optionCassetteAnimator;
@@ -64,9 +64,9 @@ public class MainMenuManager : MonoBehaviour
                 else if (hit.collider.CompareTag("Door"))
                 {                    
                     doorOutlineScript.enabled = true;
+                    ExitGame();
                 }
-            }         
-          
+            }        
         }     
 
         if(Physics.Raycast(ray, out hit))
@@ -114,10 +114,11 @@ public class MainMenuManager : MonoBehaviour
             optionCassetteOutlineScript.enabled = false;
             loadingCassetteOutlineScript.enabled = false;
             doorOutlineScript.enabled = false;            
-        }
-       
-
+        }      
     }
 
-   
+    private void ExitGame()
+    {      
+        Application.Quit();
+    }
 }

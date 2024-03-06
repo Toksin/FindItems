@@ -5,11 +5,12 @@ using UnityEngine;
 
 public class ToggleObject : MonoBehaviour
 {
-    [SerializeField] private GameObject gameObjectForToggle;
+    [SerializeField] private GameObject gameObjectForToggle;   
+    [SerializeField] private float toggleInterval = 3f;
+
     private bool isObjectActivate = true;
     private float timer = 0f;
-    [SerializeField]private float toggleInterval = 3f;
-   
+
     void Update()
     {
         timer += Time.deltaTime;

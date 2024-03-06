@@ -16,8 +16,7 @@ public class GameInput : MonoBehaviour
 
     public class OnEnvironmentMovedEventArgs : EventArgs
     {
-        public Vector2 movementVector;
-       
+        public Vector2 movementVector;       
     }
     public class OnMenuActivateEventArgs : EventArgs
     {
@@ -36,16 +35,13 @@ public class GameInput : MonoBehaviour
     }
 
     private void Menu_performed(InputAction.CallbackContext obj)
-    {
-        // KeyCode keyCode = obj.ReadValue<KeyCode>();
-
+    {       
         InputControl control = obj.control;
         
         OnMenuActivate?.Invoke(this, new OnMenuActivateEventArgs 
         {
             control = control
-        });
-  
+        });  
     }
 
     private void MoveEnvironment_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)

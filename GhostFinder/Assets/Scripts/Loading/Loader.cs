@@ -1,13 +1,15 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public static class Loader 
 {
-
     private class LoadingMonoBehaviour : MonoBehaviour { }
+
+    private static Action onLoaderCallback;
+    private static AsyncOperation loadingAsyncOperation;
+
     public enum Scene
     {
         Level0,
@@ -15,9 +17,6 @@ public static class Loader
         MainMenu,
         SampleScene,        
     }
-
-    private static Action onLoaderCallback;
-    private static AsyncOperation loadingAsyncOperation;
 
     public static void Load(Scene scene)
     {       
@@ -30,6 +29,7 @@ public static class Loader
 
         SceneManager.LoadScene(Scene.Loading.ToString());
     }
+
     public static void Load(int sceneIndex)
     {
         onLoaderCallback = () =>

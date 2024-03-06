@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CursorPos : MonoBehaviour
@@ -77,14 +76,9 @@ public class CursorPos : MonoBehaviour
     }
 
     private void Update()
-    {
-
-        // cursor.transform.position = Input.mousePosition;
-        // cursorZoom.transform.position = Input.mousePosition;
-        Vector3 mousePosition = Input.mousePosition;
-
-        // —мещаем позицию курсора влево на некоторое значение
-        mousePosition.x -= 5f; // «амените 10f на желаемое вами смещение
+    {       
+        Vector3 mousePosition = Input.mousePosition;        
+        mousePosition.x -= 5f; 
 
         cursor.transform.position = mousePosition;
         cursorZoom.transform.position = mousePosition;

@@ -10,13 +10,11 @@ public class CameraSystem : MonoBehaviour
 {
     private bool zoomIn = false;
     public event EventHandler ZoomIn;
-    public event EventHandler ZoomOut;  
-
+    public event EventHandler ZoomOut; 
 
     [SerializeField] private CinemachineVirtualCamera defaultCinemachineVirtualCamera;
     private void Update()
     {   
-
         if (!CutSceneActiveController.Instance.IsCutsceneActive())
         {
             if (Mouse.current.rightButton.wasPressedThisFrame)

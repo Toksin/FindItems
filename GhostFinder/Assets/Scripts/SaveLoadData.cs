@@ -12,8 +12,7 @@ public class SaveLoadData : MonoBehaviour
 
     private void Awake()
     {
-        SaveSystem.Init();      
-      
+        SaveSystem.Init();     
     }
 
     private void Start()
@@ -49,7 +48,7 @@ public class SaveLoadData : MonoBehaviour
      
     private void ResetGame()
     {
-         levelID = 0;
+         levelID = 2;
 
         SaveObject saveObject = new SaveObject
         {
@@ -58,7 +57,8 @@ public class SaveLoadData : MonoBehaviour
 
         string json = JsonUtility.ToJson(saveObject);
 
-        SaveSystem.Save(json);        
+        SaveSystem.Save(json);
+        Debug.Log(levelID);
     }
 
     private void NextLevel()
@@ -73,11 +73,12 @@ public class SaveLoadData : MonoBehaviour
         string json = JsonUtility.ToJson(saveObject);
 
         SaveSystem.Save(json);
+        Debug.Log(levelID);
     }
 
     private IEnumerator LoadAfterDelay()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(3f);
         Load();
     }
     
@@ -114,7 +115,6 @@ public class SaveLoadData : MonoBehaviour
            return 0;
         }
     }
-
 
     private class SaveObject
     {
