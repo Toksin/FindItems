@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ScreenVideoActivator : MonoBehaviour
@@ -37,14 +36,12 @@ public class ScreenVideoActivator : MonoBehaviour
    private IEnumerator StartVideoCorutine()
    {
         yield return new WaitForSeconds(3f);
-
         videoScreen.SetActive(true);
    }
 
-    private IEnumerator EndVideoCorutine()
-    {
-        yield return new WaitForSeconds(1f);
-
-        videoScreen.SetActive(false);
-    }
+   private IEnumerator EndVideoCorutine()
+   {
+       yield return new WaitForSeconds(1f);
+       videoScreen.SetActive(false);
+   }
 }

@@ -16,13 +16,7 @@ public class PlayerController : MonoBehaviour
     private float rotationSpeed = 6f;
     private bool isRotating = false;
     private bool isF1Pressed = false;
-    private bool isEscapePressed = false;
-
-    //private void Start()
-    //{
-    //    gameInput.OnEnvironmentMoved += GameInput_OnEnvironmentMoved;
-    //    gameInput.OnMenuActivate += GameInput_OnMenuActivate;
-    //}
+    private bool isEscapePressed = false;  
 
     private void OnEnable()
     {
@@ -75,7 +69,6 @@ public class PlayerController : MonoBehaviour
                 StartCoroutine(RotateLevel(Vector3.up, -90f, 1f / rotationSpeed));
             }
         }      
-   
     }
 
     private IEnumerator RotateLevel(Vector3 axis, float angle, float duration)
@@ -97,5 +90,4 @@ public class PlayerController : MonoBehaviour
         levelTransform.rotation = toRotation;
         isRotating = false;
     }   
-
 }

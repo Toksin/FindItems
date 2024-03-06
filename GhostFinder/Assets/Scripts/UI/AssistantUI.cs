@@ -18,11 +18,10 @@ public class AssistantUI : MonoBehaviour
 
     public event EventHandler StartSpeaking;
     private void Awake()
-    {
-        Debug.Log(saveLoadData.GetCurrentLevelID());
+    {        
         Instance = this;
         animation = transform.Find("Message").GetComponent<Animation>();  
-        if(saveLoadData.GetCurrentLevelID() == 0)
+        if(saveLoadData.GetCurrentLevelID() == 2)
         {
             transform.Find("Message").GetComponent<Button_UI>().ClickFunc = () =>
             {
@@ -54,7 +53,7 @@ public class AssistantUI : MonoBehaviour
 
             };
         }
-        else if (saveLoadData.GetCurrentLevelID() == 1)
+        else if (saveLoadData.GetCurrentLevelID() == 3)
         {
             transform.Find("Message").GetComponent<Button_UI>().ClickFunc = () =>
             {

@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SoundManager : MonoBehaviour
@@ -11,8 +10,17 @@ public class SoundManager : MonoBehaviour
     private float volume = 1f; 
 
     private void Awake()
-    {
-        Instance = this;
+    {        
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);  
+        }
+        else
+        {
+            Destroy(gameObject);  
+            return;
+        }
     }
 
     private void Start()
@@ -33,8 +41,6 @@ public class SoundManager : MonoBehaviour
             optionsUI.BackButtonClicked += BackButtonClicked_BackButtonClicked;
         }
     }
-
-
 
     private void BackButtonClicked_BackButtonClicked(object sender, System.EventArgs e)
     {

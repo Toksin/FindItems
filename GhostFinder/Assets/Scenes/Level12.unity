@@ -2645,7 +2645,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 886292111}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.42537192, y: 0.37031436, z: -0.1963871, w: 0.8020961}
+  m_LocalRotation: {x: 0.42537192, y: 0.37031433, z: -0.19638705, w: 0.8020961}
   m_LocalPosition: {x: -8.906148, y: 17.267214, z: -7.5893917}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5387,7 +5387,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "\u041F\u043E\u0442\u0440\u0456\u0431\u043D\u043E \u0437\u043D\u0430\u0439\u0442\u0438
-    \u043F\u0440\u0438\u0432\u0438\u0434\u0430"
+    \u0437\u043E\u043C\u0431\u0456"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

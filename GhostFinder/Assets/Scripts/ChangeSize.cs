@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ChangeSize : MonoBehaviour
@@ -15,13 +14,7 @@ public class ChangeSize : MonoBehaviour
     private void Awake()
     {
         cameraSystem.ZoomIn += CameraSystem_ZoomIn;
-        cameraSystem.ZoomOut += CameraSystem_ZoomOut;
-        clickOnTargetSystem.OnClick += ClickOnTargetSystem_OnClick;
-    }
-
-    private void ClickOnTargetSystem_OnClick(object sender, System.EventArgs e)
-    {       
-      // StartCoroutine(ChangeSizeCoroutine(new Vector3(151.46f, 172.2247f, 279.735f), zoomOutSpeed));        
+        cameraSystem.ZoomOut += CameraSystem_ZoomOut;       
     }
 
     void Start()
@@ -62,7 +55,5 @@ public class ChangeSize : MonoBehaviour
         }
 
         rectTransform.localScale = targetSize;
-    }
-
-  
+    }  
 }

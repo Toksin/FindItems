@@ -1,9 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PauseMenuUI : MonoBehaviour
+public class ExitToMainMenu : MonoBehaviour
 {
     [SerializeField] private Button mainMenuButton;
 
